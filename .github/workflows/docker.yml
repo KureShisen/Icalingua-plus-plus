@@ -2,12 +2,12 @@ name: build & push docker container
 on:
   push:
     branches:
-      - main
+      - develop
     tags:
       - '*'
   pull_request:
     branches:
-      - main
+      - develop
 jobs:
   docker:
     runs-on: ubuntu-latest
